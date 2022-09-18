@@ -46,6 +46,11 @@ def skin_form():
     return render_template('skin_form.html',title='skin_test')
 
 
+@app.route("/cure")
+def cureM():
+    return render_template('migrainecure.html',title='cure')
+
+
 @app.route("/about")
 def about():
     return render_template('about.html',title='About')
