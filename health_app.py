@@ -51,6 +51,11 @@ def cureM():
     return render_template('migrainecure.html',title='cure')
 
 
+@app.route("/pic")
+def pic():
+    return send_file("HouseCare.png", mimetype='image/gif')
+
+
 @app.route("/about")
 def about():
     return render_template('about.html',title='About')
